@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>    Upgrade to Imgur Pro - Imgur</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="robots" content="follow,index" />
+    <meta name="keywords" content="images, funny pictures, image host, image upload, image sharing, image resize" />
+    <meta name="description" content="Imgur is home to the web's most popular image content, curated in real time by a dedicated community through commenting, voting and sharing." />
+    <meta name="copyright" content="Copyright 2014 Imgur, Inc." />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;" />
+    
+    <link rel="alternate" type="application/rss+xml" title="Imgur Gallery" href="http://feeds.feedburner.com/ImgurGallery?format=xml" />
+    <link rel="stylesheet" type="text/css" href="https://s.imgur.com/min/global.css?1402789307" />
+        <link rel="stylesheet" type="text/css" href="https://s.imgur.com/min/business.css?1402789307" />
+            <!--[if IE 9]><link rel="stylesheet" href="//imgur.com/include/css/ie-sucks.css?0" type="text/css" /><![endif]-->
+    
+    <meta property="og:site_name" content="Imgur" />
+    <meta property="og:url" content="http://imgur.com/register/upgrade" />
+    <meta property="fb:admins" content="12331492,12301369" />
+    <meta name="twitter:site" content="@imgur"/>
+    <meta name="twitter:domain" content="imgur.com">
+    <meta name="twitter:app:id:iphone" content="639881495" />
+    <meta name="twitter:app:id:ipad" content="639881495" />
+    <meta name="twitter:app:id:googleplay" content="com.imgur.mobile" />
+    
+    
+</head>
+<body>
+        <div id="topbar" >
+        <div class="header-center">
+            <div id="header-logo">
+                <a href="../index.html" class="logo" data-jafo="nav,header_link,logo"></a>
+            </div>
+            
+            <div id="main-nav">
+                <ul>
+                    
+                    <li class="random-button title-n " title="random mode"><span class="button-outline"><a href="../gallery/AneMz.html" data-jafo="nav,header_link,random"><span class="random-icon"></span></a></span></li>
+                    <li class="upload-button disabled title-n" title="upload images"><div id="upload-global-top-bar-mini-progress"></div><span class="button-outline"><a href="javascript:void(0);"><span class="upload-icon"></span><span class="upload-queue-length">23</span></a></span></li>
+                </ul>
+            </div>
+            <div id="secondary-nav">
+                                    <ul class="user-nav">
+                        <li class="signin-link"><a class="" href="../signin.html" data-jafo="nav,header_link,user-login"><span class="dot"></span>sign in</a>
+                            <div class="signin-dropdown">
+                                <iframe id="signin-iframe" src="https://imgur.com/include/signin-iframe.html" width="234" height="192"></iframe>
+                                <div class="other-accounts">
+                                    <span class='tiptext'>Use another account</span>
+                                
+                                    <ul>
+                                        <li>
+                                            <a href="https://imgur.com/signin/google" data-jafo="nav,header_link,user-signin_google">
+                                                Google
+                                                <span class="signin-icon google"></span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://imgur.com/signin/facebook" data-jafo="nav,header_link,user-signin_facebook">
+                                                Facebook
+                                                <span class="signin-icon facebook"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://imgur.com/signin/twitter" data-jafo="nav,header_link,user-signin_twitter">
+                                                Twitter
+                                                <span class="signin-icon twitter"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://imgur.com/signin/yahoo" data-jafo="nav,header_link,user-signin_yahoo">
+                                                Yahoo
+                                                <span class="signin-icon yahoo"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a  href="../register.html" data-jafo="nav,header_link,register">register</a></li>
+                    </ul>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+
+            
+        
+        
+    
+
+            <a href="javascript:;" id="upload-global-album-tipsy" class="title-nw nodisplay" title="You can't create an album with just one image"></a>
+
+<div id="upload-global" class="popup">
+    <form method="post" id="upload-global-form" enctype="multipart/form-data" action="https://imgur.com/upload">
+        
+
+        <div id="upload-global-buttons">
+            <div id="upload-global-upload-loader" class="textbox">
+                Loading...
+            </div>
+
+            <div id="upload-global-file-wrapper">
+                <span class="computerIcon"></span>
+                <span class="green">browse</span> your computer
+
+                <input type="file" name="Filedata" multiple="multiple" id="upload-global-file">
+            </div>
+
+            <div class="left">
+                <div id="upload-global-url">
+                    <span class="webIcon"></span>
+                    <textarea id="upload-global-link-input" class="placeholder-onkeydown" title="enter URLs to upload from web" placeholder="enter URLs to upload from web" rows="1"></textarea>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="upload-global-dragdrop">
+                <span class="dragdropIcon"></span>
+                <span class="green">drag and drop</span> here
+            </div>
+
+            <div class="left">
+                <div id="upload-global-clipboard">
+                    <div style="text-align: center"><span class="clipboardIcons">Ctrl + V</span></div>
+                    <span class="green">paste</span> from your clipboard
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="textbox center" id="upload-global-instructions"></div>
+
+        <!-- gallery submit vars -->
+        <input type="hidden" name="current_upload" value="0"/>
+        <input type="hidden" name="total_uploads" value="0"/>
+        <input type="hidden" name="terms" value="0"/>
+        <input type="hidden" name="gallery_type" value=""/>
+
+
+        <div id="upload-global-errors" class="textbox error" style="display: none;"></div>
+
+        <div id="upload-global-queue-description" class="textbox nodisplay"></div>
+
+        <div id="upload-global-start-upload">
+            <div class="panel">
+                <div>
+
+                    <table id="upload-global-actions">
+                        <tbody>
+                            <tr>
+
+                                <td width="50.4%">
+
+                                    <div id="upload-global-album-checkbox-div">
+                                        <input type="hidden" name="gallery_submit" value="0"/>
+
+                                        <button id="upload-global-gallery-checkbox" type="button">
+                                            <span class="gallery-icon"></span>add to gallery
+                                        </button>
+
+                                        <div id="upload-global-gallery-checkbox-overlay"></div>
+
+                                        <input type="hidden" name="create_album" value="0"/>
+
+                                        <button id="upload-global-album-checkbox" type="button">
+                                            <span class="createAlbum-icon"></span>create album
+                                        </button>
+
+                                    </div>
+
+                                </td>
+                                <td width="49.6%">
+                                    <button type="button" id="upload-global-start-button" class="button-big green" type="submit">
+                                        <span class="start-btn-icon"></span>
+                                        Start Upload
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div id="upload-global-album-options">
+                    
+
+
+
+
+
+
+
+
+
+<table id="upload-global-album-layout">
+    <tr>
+        <td id="upload-global-album-td">
+            <input name="album_title" type="text" title="Optional Album Title" class="placeholder-onkeydown" id="upload-global-album-title" maxlength="55" />
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-blog.png&#039; style=&#039;padding-right: 2px;&#039;/&gt;</td><td>&lt;h1&gt;Blog Layout&lt;/h1&gt;Shows all the images on one page in a blog post style layout. Best for albums with a small to medium amount of images.</td></tr></table>">
+            <input id="blog-layout-upload" type="radio" name="layout" value="b" checked="checked"/>
+            <label for="blog-layout-upload">Blog</label>
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-vertical.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Vertical Layout&lt;/h1&gt;Shows one image at a time in a traditional style, with thumbnails to the right. Good for almost any album.</td></tr></table>">
+            <input id="vertical-layout-upload" type="radio" name="layout" value="v"/>
+            <label for="vertical-layout-upload">Vertical</label>
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-horizontal.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Horizontal Layout&lt;/h1&gt;Shows one image at a time in a traditional style, with thumbnails on top. Best for albums that have high resolution photos.</td></tr></table>">
+            <input id="horizontal-layout-upload" type="radio" name="layout" value="h"/>
+            <label for="horizontal-layout-upload">Horizontal</label>
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-grid.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Grid Layout&lt;/h1&gt;Shows all the images on one page as thumbnails that expand when clicked on. Best for albums with lots of images.</td></tr></table>">
+            <input id="grid-layout-upload" type="radio" name="layout" value="g"/>
+            <label for="grid-layout-upload">Grid</label>
+        </td>
+
+        <td width="15"></td>
+    </tr>
+</table>
+
+                </div>
+                <div id="upload-global-image-options">
+                    <table id="upload-global-submission-title">
+                        <tr>
+                            <td>
+                                <input name="gallery_title" type="text" class="placeholder-onkeydown" title="Gallery submission title (required)" id="upload-global-gallery-submission-title" maxlength="255" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="textbox list">
+                    <table id="upload-global-file-list-header">
+                        <tr class="top-tr">
+                            <td width="45" class="edit-td"><h2>Edit</h2></td>
+                            <td><h2>Images <span class="upload-queue-length">(0)</span></h2></td>
+                            <td width="40"></td>
+                        </tr>
+                    </table>
+
+                    <table id="upload-global-file-list">
+                    </table>
+                                            <div class="agreement-notice">By uploading, you agree to our <a href="../tos.html" target="_blank">terms of service</a></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="upload-global-progress-wrapper">
+            <div id="upload-global-progressbar">
+                <div class="progressBarBG">
+                    <div class="progressBar"></div>
+                </div>
+            </div>
+            <div id="upload-global-upload-queue"></div>
+        </div>
+    </form>
+</div>
+
+<div id="upload-global-FF-paste-box"></div>
+
+<div id="hiddenDropZone" class="nodisplay"></div>
+
+<div class="nodisplay">
+    <div id="upload-global-image-formats">
+         That file type is not supported!
+
+        <div class="textbox supported-formats">
+            Supported formats: JPEG, GIF, PNG, APNG, TIFF, BMP, PDF, XCF
+        </div>
+    </div>
+</div>
+
+<div id="upload-global-flash-container" title="upload images from your computer">
+    <div id="upload-global-flash-browse"></div>
+</div>
+
+    
+
+            <div class="nodisplay">
+            Imgur is home to the web's most popular image content, curated in real time by a dedicated community through commenting, voting and sharing.
+        </div>
+    
+
+        <div id="introduction" class="stripe shadow">
+        <div class="gradient-overlay"></div>
+        <div class="center-div align-center">
+            <h1>Upgrade to <span class="green">Imgur Pro</span></h1>
+            <p><span id="price">Just <span class="green">$23.95</span> for a 1 year pro account</span></p>
+            <div id="month" class="center bigtext">
+                <span class="green">That's less than $2 a month! It doesn't get any cheaper than that...</span>
+            </div>
+            <form action="" method="post" id="paypal-pro-form">
+                <select name="type-select" id="type-select">
+                                            <option value="1" >1 month - recurring ($2.95)</option>
+                                            <option value="3" >3 months - recurring ($6.95)</option>
+                                            <option value="6" >6 months - recurring ($12.95)</option>
+                                            <option value="12" selected="selected">1 year - recurring ($23.95)</option>
+                    
+                </select>
+                <input type="hidden" name="submit" value="paypal" />
+                <div id="subscription-buttons" title="You must sign in before becoming a Pro.">
+                    <input 
+                        id="paypal-payment"
+                        type="image"
+                        src="http://s.imgur.com/images/paypal.png"
+                        class="upgrade-disabled"
+                    />
+                    &nbsp;
+                    <input
+                        id="google-payment"
+                        type="image"
+                        src="http://s.imgur.com/images/google.png"
+                        class="upgrade-disabled upgrade-disabled"
+                        title=""
+                    />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="at-a-glance" class="stripe black">
+        <div class="center-div">
+            <h2 class="align-center">Why upgrade?</h2>
+            <ul>
+                <li class="align-center"><span class="callout green"><img src="http://s.imgur.com/images/upgrade/noad.png"></span>No Ads</li>
+                <li class="align-center"><span class="callout green"><img src="http://s.imgur.com/images/upgrade/more.png"></span>More Image Features</li>
+                <li class="align-center"><span class="callout green"><img src="http://s.imgur.com/images/upgrade/analytics.png"></span>Better Analytics</li>
+            </ul>
+        </div>
+    </div>
+    <div id="perks" class="stripe last-child">
+        <div class="center-div">
+            <h2 class="align-center font36">Perk Breakdown</h2>
+            <table class="perk-table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td class="no-bottom-padding"><h3>Standard</h3></td>
+                        <td class="no-bottom-padding"><h3>Pro</h3></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="header">Total Account Images</td>
+                        <td class="red">225 Limit</td>
+                        <td class="green">No Limit</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Standard accounts are limited to the 225 most recent
+                            images. After that, the newest uploads will be
+                            shown and the oldest uploads will be bumped out of
+                            the account (not deleted, just hidden from within
+                            the account). There is no limit to pro accounts.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header">Image Compression</td>
+                        <td class="red">5 MB maximum</td>
+                        <td class="green">10 MB maximum</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            With standard accounts, images over 5 MB will be
+                            compressed until they are less than 5 MB. With pro
+                            accounts, your images <strong>aren't touched in any way
+                            unless they are over 10 MB</strong>, in which case they
+                            will be compressed until they reach 10MB in size.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header">Animated GIFs</td>
+                        <td class="red">5 MB maximum</td>
+                        <td class="green">10 MB maximum</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Animated GIF images are limited to 5MB per file on standard accounts,
+                            pro accounts can upload GIFs up to 10MB each.  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header">Thumbnails</td>
+                        <td class="red">Small and Large</td>
+                        <td class="green">Small, Medium, Large, Huge, Small Square, Big Square</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            You get 4 extra thumbnails with pro accounts, making 6
+                            thumbnails total. The sizes are: longest side 1024px,
+                            longest side 640px, longest side 320px, longest side
+                            160px, cropped square 160px, and cropped square 90px.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header">Ads</td>
+                        <td class="red">Yes :-(</td>
+                        <td class="green">No! :-D</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            When you're logged into a pro account, there are no ads
+                            anywhere to be seen. Also, if someone is browsing your
+                            albums, they won't see any ads either!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header">Image Analytics</td>
+                        <td class="red">5 top referrers</td>
+                        <td class="green">100 top referrers - view count and URL drill down</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            Keep track of where your image goes after you upload and share it.
+                            The standard account only gives you 5 out of 10 top referrers in random order,
+                            while Pro users are given the <strong>top 100 referrers</strong>. Pro accounts will also be given the ability
+                            to see how many views came from each referrer and when an image was <strong>first seen on a referrer</strong> as well.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Don't like subscriptions?</h3>
+                            You can cancel the subscription at any time (even right after
+                            you get it!) and your account will remain pro until your paid
+                            time runs out.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="small align-center want-more">I am convinced!</p>
+            <button class="transition futura-font blue-cta-btn border-radius gopro-btn">Go Pro</button>
+        </div>
+    </div>
+    
+
+            <div id="footer">
+                <div id="copyright">&copy; 2014 Imgur, Inc.</div>
+
+
+<div id="footer-links">
+    <a href="../jobs.html" class="title new" title="come work at Imgur" data-jafo="nav,footer,jobs">we're hiring!</a> &middot;
+    <a href="http://store.imgur.com" class="title" title="the official imgur store" data-jafo="nav,footer,jobs">store</a> &middot;
+    <a href="http://help.imgur.com" class="title" title="answers to your questions" data-jafo="nav,footer,help">help</a> &middot;
+    <a href="../blog/index.html" class="title" title="the simple imgur blog" data-jafo="nav,footer,blog">blog</a> &middot;
+    <a href="../removalrequest.html" class="title" title="request an image to be deleted" data-jafo="nav,footer,deletion">request deletion</a>  &middot;
+    <a href="../tos.html" class="title" title="terms of service" data-jafo="nav,footer,terms">terms</a> &middot;
+            <a href="upgrade.html" class="title" title="upgrade to a pro account" data-jafo="nav,footer,pro">get pro</a> &middot;
+    
+    <a href="http://imgur.com/apps" class="title" title="desktop apps and tools for better uploading" data-jafo="nav,footer,apps">apps</a> &middot;
+    <a href="http://api.imgur.com" class="title" title="documentation for our API" data-jafo="nav,footer,api">api</a> &middot;
+    <a href="http://imgur.com/advertise" class="title" title="advertise with us" data-jafo="nav,footer,advertise">advertise</a>
+</div>
+
+<div class="clear"></div>
+
+        </div>
+    
+
+    
+
+    
+
+            <script type="text/javascript">
+            (function() {
+                var roll = Math.random();
+                if(roll < 0.05) {
+                    
+                    (function(_,e,rr,s){
+                        _errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+                        c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+                        c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+                        _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)
+                    })(window,document,"script","51d1e360b05ccb10310000d2");
+                    
+                }
+            })();
+        </script>
+            
+        <script type="text/javascript" src="https://s.imgur.com/min/global.js?1402789307"></script>
+        <script type="text/javascript">
+            Imgur.Environment = {
+                isDev:         false,
+                host:          'imgur.com',
+                cdnUrl:        '//i.imgur.com',
+                signed:        false,
+                auth:          {},
+                recaptcha_key: '6LeZbt4SAAAAAKEsafT3QzEFp5vJ1-Z23uy5mPDz'
+            };
+
+            var imgur = Imgur.getInstance();
+            imgur.init(_.merge(Imgur.Environment, {
+                
+                
+                
+            }));
+
+                            var uploader = Imgur.Upload.Global.getInstance(Imgur.getInstance()._);
+
+                if(uploader._.el.$uploadGlobal.length > 0) {
+                    uploader.bindPasteUpload();
+                    uploader.generalInit();
+                }
+            
+
+            imgur.generalInit();
+
+            
+
+            
+            
+
+            var _widgetFactory = new Imgur.WidgetFactory(Imgur.Environment);
+        </script>
+        
+        <script type="text/javascript">
+            (function(widgetFactory) { 
+                widgetFactory.mergeConfig('analytics', {
+                    isAdmin: false
+                });
+            })(_widgetFactory);
+        </script>
+    
+
+        <script type="text/javascript" src="http://wallet.google.com/inapp/lib/buy.js"></script>
+    <script type="text/javascript" src="https://s.imgur.com/min/upgrade.js?1402789307"></script>
+    <script type="text/javascript">
+        var pro_details = {"1":{"name":"1 month","plug":"You could save $12 with a 1 year subscription.","price":2.95},"3":{"name":"3 months","plug":"You could save $4 with a 1 year subscription.","price":6.95},"6":{"name":"6 months","plug":"You could save $2 with a 1 year subscription.","price":12.95},"12":{"name":"1 year","plug":"That's less than $2 a month! It doesn't get any cheaper than that...","price":23.95}},
+            payment = new Imgur.Promotion.Payment({
+                'user' : ''
+            });
+    </script>
+
+        
+    
+
+            <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-6671908-2']);
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_trackPageview']);
+            _gaq.push(['_trackPageLoadTime']);
+
+            
+
+            Imgur.Util.jafoFireLocalStor()
+            Imgur.Util.jafoBindByAttrib();
+
+            
+
+            if(document.location.protocol === 'https:') {
+                _gaq.push(['_trackEvent', 'feature', 'secure_connection']);
+            }
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <script type='text/javascript'>
+            var _qevents = _qevents || [];
+            (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "//edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+            })();
+
+            _qevents.push({
+                qacct:"p-f8oruOqDFlMeI"
+            });
+        </script>
+
+        <noscript>
+            <div class="nodisplay">
+                <img src="http://pixel.quantserve.com/pixel/p-f8oruOqDFlMeI.gif" border="0" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+
+        
+    
+
+    <script type='text/javascript'>
+        
+        (function(){
+            try{
+                var msg = '\n      _\n     (_)\n      _ _ __ ___   __ _ _   _ _ __\n     | | \'_ ` _ \\ / _` | | | | \'__|\n     | | | | | | | (_| | |_| | |\n     |_|_| |_| |_|\\__, |\\__,_|_|\n                   __/ |\n                  |___/\n';
+                msg += '========================================\nYou opened the console! Know some code,\ndo you? Want to work for one of the best\nstartups around? http://imgur.com/jobs\n========================================\n';
+                console.log(msg);
+            }catch(e){}
+        })()
+        
+    </script>
+
+    
+</body>
+</html>

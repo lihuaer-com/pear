@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>    Uploading Tools - Imgur</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="robots" content="follow,index" />
+    <meta name="keywords" content="images, funny pictures, image host, image upload, image sharing, image resize" />
+    <meta name="description" content="Imgur is home to the web's most popular image content, curated in real time by a dedicated community through commenting, voting and sharing." />
+    <meta name="copyright" content="Copyright 2014 Imgur, Inc." />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;" />
+    
+    <link rel="alternate" type="application/rss+xml" title="Imgur Gallery" href="http://feeds.feedburner.com/ImgurGallery?format=xml" />
+    <link rel="stylesheet" type="text/css" href="http://s.imgur.com/min/global.css?1402789307" />
+        <link rel="stylesheet" href="http://s.imgur.com/min/tools.css?1402789307" type="text/css" />
+            <!--[if IE 9]><link rel="stylesheet" href="//s.imgur.com/include/css/ie-sucks.css?0" type="text/css" /><![endif]-->
+    
+    <meta property="og:site_name" content="Imgur" />
+    <meta property="og:url" content="http://imgur.com/tools/" />
+    <meta property="fb:admins" content="12331492,12301369" />
+    <meta name="twitter:site" content="@imgur"/>
+    <meta name="twitter:domain" content="imgur.com">
+    <meta name="twitter:app:id:iphone" content="639881495" />
+    <meta name="twitter:app:id:ipad" content="639881495" />
+    <meta name="twitter:app:id:googleplay" content="com.imgur.mobile" />
+    
+    
+</head>
+<body>
+        <div id="topbar" class="no-logo">
+        <div class="header-center">
+            <div id="header-logo">
+                <a href="../index.html" class="logo" data-jafo="nav,header_link,logo"></a>
+            </div>
+                            <div id="location-nav">
+                    <ul>
+                        <li>
+                                                            <a class="active" href="index.html" data-jafo="nav,header_link,location_nav">
+                            
+                                                            tools
+                            
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+            <div id="main-nav">
+                <ul>
+                    
+                    <li class="random-button title-n " title="random mode"><span class="button-outline"><a href="../gallery/AneMz.html" data-jafo="nav,header_link,random"><span class="random-icon"></span></a></span></li>
+                    <li class="upload-button disabled title-n" title="upload images"><div id="upload-global-top-bar-mini-progress"></div><span class="button-outline"><a href="javascript:void(0);"><span class="upload-icon"></span><span class="upload-queue-length">23</span></a></span></li>
+                </ul>
+            </div>
+            <div id="secondary-nav">
+                                    <ul class="user-nav">
+                        <li class="signin-link"><a class="" href="../signin.html" data-jafo="nav,header_link,user-login"><span class="dot"></span>sign in</a>
+                            <div class="signin-dropdown">
+                                <iframe id="signin-iframe" src="https://imgur.com/include/signin-iframe.html" width="234" height="192"></iframe>
+                                <div class="other-accounts">
+                                    <span class='tiptext'>Use another account</span>
+                                
+                                    <ul>
+                                        <li>
+                                            <a href="https://imgur.com/signin/google" data-jafo="nav,header_link,user-signin_google">
+                                                Google
+                                                <span class="signin-icon google"></span>
+                                            </a>
+                                        </li>
+                                        <li><a href="https://imgur.com/signin/facebook" data-jafo="nav,header_link,user-signin_facebook">
+                                                Facebook
+                                                <span class="signin-icon facebook"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://imgur.com/signin/twitter" data-jafo="nav,header_link,user-signin_twitter">
+                                                Twitter
+                                                <span class="signin-icon twitter"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://imgur.com/signin/yahoo" data-jafo="nav,header_link,user-signin_yahoo">
+                                                Yahoo
+                                                <span class="signin-icon yahoo"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a  href="../register.html" data-jafo="nav,header_link,register">register</a></li>
+                    </ul>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+
+            
+        
+        
+    
+
+            <a href="javascript:;" id="upload-global-album-tipsy" class="title-nw nodisplay" title="You can't create an album with just one image"></a>
+
+<div id="upload-global" class="popup">
+    <form method="post" id="upload-global-form" enctype="multipart/form-data" action="http://imgur.com/upload">
+        
+
+        <div id="upload-global-buttons">
+            <div id="upload-global-upload-loader" class="textbox">
+                Loading...
+            </div>
+
+            <div id="upload-global-file-wrapper">
+                <span class="computerIcon"></span>
+                <span class="green">browse</span> your computer
+
+                <input type="file" name="Filedata" multiple="multiple" id="upload-global-file">
+            </div>
+
+            <div class="left">
+                <div id="upload-global-url">
+                    <span class="webIcon"></span>
+                    <textarea id="upload-global-link-input" class="placeholder-onkeydown" title="enter URLs to upload from web" placeholder="enter URLs to upload from web" rows="1"></textarea>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="upload-global-dragdrop">
+                <span class="dragdropIcon"></span>
+                <span class="green">drag and drop</span> here
+            </div>
+
+            <div class="left">
+                <div id="upload-global-clipboard">
+                    <div style="text-align: center"><span class="clipboardIcons">Ctrl + V</span></div>
+                    <span class="green">paste</span> from your clipboard
+                </div>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="textbox center" id="upload-global-instructions"></div>
+
+        <!-- gallery submit vars -->
+        <input type="hidden" name="current_upload" value="0"/>
+        <input type="hidden" name="total_uploads" value="0"/>
+        <input type="hidden" name="terms" value="0"/>
+        <input type="hidden" name="gallery_type" value=""/>
+
+
+        <div id="upload-global-errors" class="textbox error" style="display: none;"></div>
+
+        <div id="upload-global-queue-description" class="textbox nodisplay"></div>
+
+        <div id="upload-global-start-upload">
+            <div class="panel">
+                <div>
+
+                    <table id="upload-global-actions">
+                        <tbody>
+                            <tr>
+
+                                <td width="50.4%">
+
+                                    <div id="upload-global-album-checkbox-div">
+                                        <input type="hidden" name="gallery_submit" value="0"/>
+
+                                        <button id="upload-global-gallery-checkbox" type="button">
+                                            <span class="gallery-icon"></span>add to gallery
+                                        </button>
+
+                                        <div id="upload-global-gallery-checkbox-overlay"></div>
+
+                                        <input type="hidden" name="create_album" value="0"/>
+
+                                        <button id="upload-global-album-checkbox" type="button">
+                                            <span class="createAlbum-icon"></span>create album
+                                        </button>
+
+                                    </div>
+
+                                </td>
+                                <td width="49.6%">
+                                    <button type="button" id="upload-global-start-button" class="button-big green" type="submit">
+                                        <span class="start-btn-icon"></span>
+                                        Start Upload
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div id="upload-global-album-options">
+                    
+
+
+
+
+
+
+
+
+
+<table id="upload-global-album-layout">
+    <tr>
+        <td id="upload-global-album-td">
+            <input name="album_title" type="text" title="Optional Album Title" class="placeholder-onkeydown" id="upload-global-album-title" maxlength="55" />
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-blog.png&#039; style=&#039;padding-right: 2px;&#039;/&gt;</td><td>&lt;h1&gt;Blog Layout&lt;/h1&gt;Shows all the images on one page in a blog post style layout. Best for albums with a small to medium amount of images.</td></tr></table>">
+            <input id="blog-layout-upload" type="radio" name="layout" value="b" checked="checked"/>
+            <label for="blog-layout-upload">Blog</label>
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-vertical.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Vertical Layout&lt;/h1&gt;Shows one image at a time in a traditional style, with thumbnails to the right. Good for almost any album.</td></tr></table>">
+            <input id="vertical-layout-upload" type="radio" name="layout" value="v"/>
+            <label for="vertical-layout-upload">Vertical</label>
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-horizontal.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Horizontal Layout&lt;/h1&gt;Shows one image at a time in a traditional style, with thumbnails on top. Best for albums that have high resolution photos.</td></tr></table>">
+            <input id="horizontal-layout-upload" type="radio" name="layout" value="h"/>
+            <label for="horizontal-layout-upload">Horizontal</label>
+        </td>
+
+        <td class="center title" title="<table><tr><td style='vertical-align: middle'>&lt;img src=&#039;//s.imgur.com/images/album-layout-grid.png&#039;  style=&#039;padding-right: 6px;&#039;/&gt;</td><td>&lt;h1&gt;Grid Layout&lt;/h1&gt;Shows all the images on one page as thumbnails that expand when clicked on. Best for albums with lots of images.</td></tr></table>">
+            <input id="grid-layout-upload" type="radio" name="layout" value="g"/>
+            <label for="grid-layout-upload">Grid</label>
+        </td>
+
+        <td width="15"></td>
+    </tr>
+</table>
+
+                </div>
+                <div id="upload-global-image-options">
+                    <table id="upload-global-submission-title">
+                        <tr>
+                            <td>
+                                <input name="gallery_title" type="text" class="placeholder-onkeydown" title="Gallery submission title (required)" id="upload-global-gallery-submission-title" maxlength="255" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="textbox list">
+                    <table id="upload-global-file-list-header">
+                        <tr class="top-tr">
+                            <td width="45" class="edit-td"><h2>Edit</h2></td>
+                            <td><h2>Images <span class="upload-queue-length">(0)</span></h2></td>
+                            <td width="40"></td>
+                        </tr>
+                    </table>
+
+                    <table id="upload-global-file-list">
+                    </table>
+                                            <div class="agreement-notice">By uploading, you agree to our <a href="../tos.html" target="_blank">terms of service</a></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="upload-global-progress-wrapper">
+            <div id="upload-global-progressbar">
+                <div class="progressBarBG">
+                    <div class="progressBar"></div>
+                </div>
+            </div>
+            <div id="upload-global-upload-queue"></div>
+        </div>
+    </form>
+</div>
+
+<div id="upload-global-FF-paste-box"></div>
+
+<div id="hiddenDropZone" class="nodisplay"></div>
+
+<div class="nodisplay">
+    <div id="upload-global-image-formats">
+         That file type is not supported!
+
+        <div class="textbox supported-formats">
+            Supported formats: JPEG, GIF, PNG, APNG, TIFF, BMP, PDF, XCF
+        </div>
+    </div>
+</div>
+
+<div id="upload-global-flash-container" title="upload images from your computer">
+    <div id="upload-global-flash-browse"></div>
+</div>
+
+    
+
+            <div class="nodisplay">
+            Imgur is home to the web's most popular image content, curated in real time by a dedicated community through commenting, voting and sharing.
+        </div>
+    
+
+        <div id="clickable-logo">
+        <a href="../index.html"><img src="http://s.imgur.com/images/imgur.gif" /></a>
+    </div>
+
+    <div id="text-content">
+        <div class="textbox">
+            All the tools listed below are completely free to use. You can also
+            create your own tools with a little bit of programming knowledge and
+            by using the <a href="http://api.imgur.com">API</a>.
+        </div>
+        <div class="textbox">
+            <h2>MemeGen iPhone app</h2>
+            <p class="developer">
+                by Imgur
+            </p>
+            <p>
+                Imgur's very own MemeGen app is now available on iPhone, and iPad in scaled mode.
+                Create memes using the most popular templates, or use your own images.
+                MemeGen also automates uploading of your generated memes to Imgur for easy sharing.
+            </p>
+            <p>
+                <a href="https://itunes.apple.com/us/app/imgur-memegen/id715739379?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url('https://linkmaker.itunes.apple.com/htmlResources/assets/en_us/images/web/linkmaker/badge_appstore-lrg.png') no-repeat;width:135px;height:40px;@media only screen{background-image:url('https://linkmaker.itunes.apple.com/htmlResources/assets/en_us/images/web/linkmaker/badge_appstore-lrg.svg');}"></a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>Firefox Extension</h2>
+            <p class="developer">
+                by <a href="https://addons.mozilla.org/en-US/firefox/user/144770/">Chromakode</a>
+            </p>
+            <p>
+                This addon lets you upload any image found on the internet with
+                a simple right button mouse click. Just right click an image and
+                select "upload image on imgur". The URL of the newly uploaded
+                image is automatically copied in the clipboard and a new tab
+                opens to the imgur page.
+            </p>
+            <p>
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/14389">Download from Firefox</a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>Chrome Extension</h2>
+            <p class="developer">
+                by <a href="http://www.metronomik.com/">Metronomik</a>
+            </p>
+            <p>
+                Take screenshots, add images to your Imgur account and upload
+                images from your desktop using drag and drop, all within Google
+                Chrome.
+            </p>
+            <p>
+                <a href="https://chrome.google.com/webstore/detail/imgur-extension-by-metron/ehoopddfhgaehhmphfcooacjdpmbjlao?hl=en">Download from the Chrome Web Store</a>
+            </p>
+        </div>
+        
+        <div class="textbox">
+            <h2>Right click -> Send To -> Imgur</h2>
+            <p class="developer">
+                by <a href="mailto:iamhrh@gmail.com">iamhrh (Reddit)</a>
+            </p>
+            <p>
+                A simple program that allows you to right click on a file and
+                send it to Imgur. It supports multiple files can copy the links
+                to your clipboard. Windows only.
+            </p>
+            <p>
+                <a href="http://imguruploader.codeplex.com/releases/view/40965">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>MyImgur</h2>
+            <p class="developer">
+                by <a href="http://myimgur.tk/contact/">Brian</a>
+            </p>
+            <p>
+                MyImgur is the most handy capture and uploader tool you'll ever
+                find Windows computers. Intuitive 1-click actions and simple
+                settings to very quickly capture areas of your screen or
+                specific windows and send them to Imgur for sharing, or select a
+                few files from your computer and drag them to Imgur to have them
+                sent in a batch without any further actions. It's also the
+                only desktop application with full Imgur account support.
+            </p>
+            <p>
+                <a href="http://myimgur.eden.fm/">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>OS X Dashboard Widget</h2>
+            <p class="developer">
+                by <a href="mailto:stephen.david.bell@googlemail.com">Stephen Bell</a>
+            </p>
+            <p>
+                A dashboard widget for Mac OS X. Just click and hold the file
+                you want to upload, press the F4 key to bring up the dashboard,
+                and drop the file into the widget. The URL will be copied to the
+                clipboard.
+            </p>
+            <p>
+                <a href="http://imgur.com/tools/imgur-dashboard-widget.zip">
+                    Download
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>ImgurBar</h2>
+            <p class="developer">
+                by <a href="https://github.com/zbuc">zbuc</a>
+            </p>
+            <p>
+                An OS X menubar application that makes it easy to upload images
+                to imgur.com. Simply drag and drop images to the green dot.
+            </p>
+            <p>
+                <a href="https://github.com/zbuc/imgurBar">
+                    Download from GitHub
+                </a>
+            </p>
+        </div>
+        
+        <div class="textbox">
+            <h2>EasyImgur</h2>
+            <p class="developer">
+                by <a href="https://github.com/Rycul">Rycul</a>
+            </p>
+            <p>
+                EasyImgur is a small and simple tool to easily upload images to
+                imgur.com from your desktop. More details can be found on GitHub at:
+                <a href="https://github.com/Rycul/EasyImgur">https://github.com/Rycul/EasyImgur</a>
+            </p>
+            <p>
+                <a href="https://github.com/Rycul/EasyImgur/blob/master/dist/Release">
+                    Download from the developer (for Windows)
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>Cross-platform Desktop Uploader</h2>
+            <p class="developer">
+                by <a href="http://blog.lerlop.com/">Mick lerlop</a>
+            </p>
+            <p>
+                Fast, lightweight, cross-platform imgur image uploader built on
+                Adobe AIR technology.
+            </p>
+            <p>
+                <a href="http://lerlop.com/2009/11/imgur-uploader/">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+        
+        <div class="textbox">
+            <h2>OSX Screenshot Uploader</h2>
+            <p class="developer">
+                by <a href="https://github.com/rauix">rauix</a>
+            </p>
+            <p>
+                A simple and snappy way to automatically upload screenshots to
+                imgur!
+            </p>
+            <p>
+                <a href="https://github.com/rauix/mac2imgur">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>Imgur-Screenshot</h2>
+            <p class="developer">
+                by <a href="https://github.com/jomo">jomo</a>
+            </p>
+            <p>
+                A simple screenshot bash script for Linux and OS X. Just run the script
+                and select a portion of your screen to upload. The direct link
+                to the image is then copied to your clipboard.
+            </p>
+            <p>
+                <a href="https://github.com/jomo/imgur-screenshot">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>Wordpress Plugin</h2>
+            <p class="developer">
+                by <a href="http://wp.am">Chris</a>
+            </p>
+            <p>
+                This plugin allows you to upload images to Imgur from within
+                Wordpress. From the media manager, you can easily select images
+                from your harddrive to be inserted into your post.
+            </p>
+            <p>
+                <a href="http://wp.am/imgur/">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>OS X Command Line Uploader</h2>
+            <p class="developer">
+                by <a href="http://figbug.com/?page_id=29">Roland Rabien</a>
+            </p>
+            <p>
+                A OS X Command line utility to upload to imgur. Supports
+                resizing and file format conversion.
+            </p>
+            <p>
+                <a href="http://figbug.com/?page_id=29">
+                    Download from the developer
+                </a>
+            </p>
+        </div>
+
+        <div class="textbox">
+            <h2>Bart's Bash Script Uploader</h2>
+            <p class="developer">
+                by <a href="http://bartnagel.co.uk/">Bart Nagel</a>
+            </p>
+            <p>
+                A simple bash script to upload an image to imgur from the
+                commandline. Run "imgur images/delicious/cake.jpg" to upload,
+                print the new URL to stdout, print the delete page URL to stderr
+                and put URL on the X clipboard for easy pasting.
+            </p>
+            <p>
+                <a href="http://imgur.com/tools/imgurbash.sh">
+                    Download
+                </a>
+            </p>
+        </div>
+        
+        <div class="textbox">
+            <h2>img Bash Script Uploader</h2>
+
+            <p class="developer">
+                by <a href="https://github.com/Ceryn">Ceryn</a>
+            </p>
+            <p>
+                A minimalistic screenshot uploader for Linux. Supports screen selection. 
+            </p>
+            <p>
+                <a href="https://github.com/ceryn/img">
+                    Download
+                </a>
+            </p>
+        </div>
+        
+        <div class="textbox">
+            <h2>SnagitImgur</h2>
+
+            <p class="developer">
+                by <a href="https://github.com/hmemcpy">Igal</a>
+            </p>
+            <p>
+                A plugin ("accessory") for Snagit that allows sending the currently captured image to imgur.com
+            </p>
+            <p>
+                <a href="https://github.com/hmemcpy/SnagitImgur">
+                    Download
+                </a>
+            </p>
+        </div>
+        
+        <div class="textbox">
+            <h2>Loqui.Me</h2>
+
+            <p class="developer">
+                by <a href="http://xondesigns.com/">William</a>
+            </p>
+            <p>
+                Loqui.Me is a Chrome and Firefox plugin that allows you to chat with other users on imgur
+            </p>
+            <p>
+                The plugin doesn't require a registration or login to work so all you have to install the plugin and you are good to go.
+            </p>
+            <p>
+                <a href="http://loqui.me/#!install">
+                    Download
+                </a>
+            </p>
+        </div>
+    </div>
+    
+
+            <div id="footer">
+                <div id="copyright">&copy; 2014 Imgur, Inc.</div>
+
+
+<div id="footer-links">
+    <a href="../jobs.html" class="title new" title="come work at Imgur" data-jafo="nav,footer,jobs">we're hiring!</a> &middot;
+    <a href="http://store.imgur.com" class="title" title="the official imgur store" data-jafo="nav,footer,jobs">store</a> &middot;
+    <a href="http://help.imgur.com" class="title" title="answers to your questions" data-jafo="nav,footer,help">help</a> &middot;
+    <a href="../blog/index.html" class="title" title="the simple imgur blog" data-jafo="nav,footer,blog">blog</a> &middot;
+    <a href="../removalrequest.html" class="title" title="request an image to be deleted" data-jafo="nav,footer,deletion">request deletion</a>  &middot;
+    <a href="../tos.html" class="title" title="terms of service" data-jafo="nav,footer,terms">terms</a> &middot;
+            <a href="../register/upgrade.html" class="title" title="upgrade to a pro account" data-jafo="nav,footer,pro">get pro</a> &middot;
+    
+    <a href="http://imgur.com/apps" class="title" title="desktop apps and tools for better uploading" data-jafo="nav,footer,apps">apps</a> &middot;
+    <a href="http://api.imgur.com" class="title" title="documentation for our API" data-jafo="nav,footer,api">api</a> &middot;
+    <a href="http://imgur.com/advertise" class="title" title="advertise with us" data-jafo="nav,footer,advertise">advertise</a>
+</div>
+
+<div class="clear"></div>
+
+        </div>
+    
+
+    
+
+    
+
+            <script type="text/javascript">
+            (function() {
+                var roll = Math.random();
+                if(roll < 0.05) {
+                    
+                    (function(_,e,rr,s){
+                        _errs=[s];var c=_.onerror;_.onerror=function(){var a=arguments;_errs.push(a);
+                        c&&c.apply(this,a)};var b=function(){var c=e.createElement(rr),b=e.getElementsByTagName(rr)[0];
+                        c.src="//beacon.errorception.com/"+s+".js";c.async=!0;b.parentNode.insertBefore(c,b)};
+                        _.addEventListener?_.addEventListener("load",b,!1):_.attachEvent("onload",b)
+                    })(window,document,"script","51d1e360b05ccb10310000d2");
+                    
+                }
+            })();
+        </script>
+            
+        <script type="text/javascript" src="http://s.imgur.com/min/global.js?1402789307"></script>
+        <script type="text/javascript">
+            Imgur.Environment = {
+                isDev:         false,
+                host:          'imgur.com',
+                cdnUrl:        '//i.imgur.com',
+                signed:        false,
+                auth:          {},
+                recaptcha_key: '6LeZbt4SAAAAAKEsafT3QzEFp5vJ1-Z23uy5mPDz'
+            };
+
+            var imgur = Imgur.getInstance();
+            imgur.init(_.merge(Imgur.Environment, {
+                
+                
+                
+            }));
+
+                            var uploader = Imgur.Upload.Global.getInstance(Imgur.getInstance()._);
+
+                if(uploader._.el.$uploadGlobal.length > 0) {
+                    uploader.bindPasteUpload();
+                    uploader.generalInit();
+                }
+            
+
+            imgur.generalInit();
+
+            
+
+            
+            
+
+            var _widgetFactory = new Imgur.WidgetFactory(Imgur.Environment);
+        </script>
+        
+        <script type="text/javascript">
+            (function(widgetFactory) { 
+                widgetFactory.mergeConfig('analytics', {
+                    isAdmin: false
+                });
+            })(_widgetFactory);
+        </script>
+    
+
+    
+
+        
+    
+
+            <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-6671908-2']);
+            _gaq.push(['_setDomainName', 'none']);
+            _gaq.push(['_trackPageview']);
+            _gaq.push(['_trackPageLoadTime']);
+
+            
+
+            Imgur.Util.jafoFireLocalStor()
+            Imgur.Util.jafoBindByAttrib();
+
+            
+
+            if(document.location.protocol === 'https:') {
+                _gaq.push(['_trackEvent', 'feature', 'secure_connection']);
+            }
+
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <script type='text/javascript'>
+            var _qevents = _qevents || [];
+            (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "//edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+            })();
+
+            _qevents.push({
+                qacct:"p-f8oruOqDFlMeI"
+            });
+        </script>
+
+        <noscript>
+            <div class="nodisplay">
+                <img src="http://pixel.quantserve.com/pixel/p-f8oruOqDFlMeI.gif" border="0" height="1" width="1" alt="Quantcast"/>
+            </div>
+        </noscript>
+
+        
+
+                    <script type="text/javascript" src="http://tap-cdn.rubiconproject.com/partner/scripts/rubicon/alice.js?pc=8526/13802"></script>
+            <script type='text/javascript' src='http://static.fmpub.net/site/imgur'></script>
+        
+    
+
+    <script type='text/javascript'>
+        
+        (function(){
+            try{
+                var msg = '\n      _\n     (_)\n      _ _ __ ___   __ _ _   _ _ __\n     | | \'_ ` _ \\ / _` | | | | \'__|\n     | | | | | | | (_| | |_| | |\n     |_|_| |_| |_|\\__, |\\__,_|_|\n                   __/ |\n                  |___/\n';
+                msg += '========================================\nYou opened the console! Know some code,\ndo you? Want to work for one of the best\nstartups around? http://imgur.com/jobs\n========================================\n';
+                console.log(msg);
+            }catch(e){}
+        })()
+        
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="robots" content="FOLLOW,INDEX" />
+    <meta name="keywords" content="images, funny pictures, image host, image upload, image sharing, image resize" />
+    <meta name="description" content="Imgur is used to share photos with social networks and online communities, and has the funniest pictures from all over the Internet." />
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;" />
+    <title>imgur: the simple imgur blog</title>
+    <link rel="alternate" type="application/rss+xml" title="Imgur Blog" href="http://feeds.feedburner.com/TheImgurBlog?format=xml" />
+    <link rel="stylesheet" href="http://s.imgur.com/min/global.css?1375316717" type="text/css" />
+    <link rel="stylesheet" href="http://s.imgur.com/include/css/blog.css?1375316717" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('input[type=text]').focus(function(){
+                if($(this).val() == $(this).attr('defaultValue')) {
+                    $(this).css('color', '#fff');
+                    $(this).val('');
+                }
+            });
+
+            $('input[type=text]').blur(function(){
+                if($(this).val() == '')    {
+                    $(this).val($(this).attr('defaultValue'));
+                    $(this).css('color', '#666');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="topbar">
+        <div class="header-center">
+            <div id="header-logo">
+                <a href="../../../index.html" class="logo"></a>
+            </div>
+        </div>
+    </div>
+
+	<div id="wrapper">
+		<div id="content" class="narrowcolumn" role="main">
+
+			
+		  		  			<h1 class="pagetitle">Archive for the &#8216;Tech Tuesday&#8217; Category</h1>
+		  
+			<div class="navigation">
+				<div class="alignleft"><a href="http://imgur.com/blog/category/tech-tuesday/page/2/" >&laquo; Older Entries</a></div>
+				<div class="alignright"></div>
+			</div>
+
+						<div class="post-3159 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-3159"><a href="http://imgur.com/blog/2013/09/17/tech-tuesday-the-importance-of-data/" rel="bookmark" title="Permanent Link to Tech Tuesday: The Importance of Data">Tech Tuesday: The Importance of Data</a></h2>
+				<div class="textbox">
+					<small>Tuesday, September 17th, 2013</small>
+
+					<div class="entry">
+						<p>This week we ran a few database queries that helped us get a snapshot of day-to-day interactions on our site. The waffle charts below help to visually break down what our users are doing with their well-spent time on Imgur.</p>
+<p><img src="http://i.imgur.com/shaLTNQl.png" alt="" /><br />
+<em>Shares are based on the number of images shared through clicking our buttons below the images. We are not counting any copy and paste sharing.</em></p>
+<p>This data becomes useful when we have data sets that compare over time. </p>
+<p><a href="http://i.imgur.com/VuDRrS0.jpg"><img src="http://i.imgur.com/VuDRrS0h.jpg" alt="" /></a></p>
+<p>For a site like Imgur, it is really important not to get caught up with big numbers. It is more important to stress context with data, which will then allow us to make informed decisions about future steps for our product and site.</p>
+<p><strong>Some small examples of how we can put this data into context:</strong><br />
+1. In 2010, we had a total of 1,920,578 image uploads (5,262 images daily). Today, our users upload 1 million images daily, an increase of 190x. Now, that is a huge amount of growth in under 3 years!</p>
+<p>2. Of the daily 1 million image uploads, only 23,000 are actually submitted to Reddit. For a site which was created primarily with a goal of improving the Reddit experience, this shows that our community is expanding beyond its initial intents.</p>
+<p><strong>How we might use data for planning our future:</strong><br />
+We’ve already gained valuable insight from this data. Of the 11,000 daily direct messages sent, the majority of them have “No subject” in the subject line. It became apparent that we should redesign this flow to better fit user expectations and usage. The new messaging system should be finished in a few weeks, and will focus more on a chat-style interface than an email one (and will include instant notifications!).</p>
+<p>3.125 M gallery interactions, which include votes and comments, are a concrete reminder of just how important our community is on Imgur. With this in mind, we are able to project how much our registered users and gallery interactions will grow, which allows us not only to plan ahead on the technical side, but also on the ad revenue side (which keeps our doors open). We can be sure to partner with relevant ad agencies and bring you sponsored ads that don&#8217;t suck.</p>
+<p>Our team is just starting to dive into the data we have and think about how we can use it to add value to the user experience. With that in mind, this won’t stop us from continuing to take suggestions straight from our community, because we wouldn’t be here without you!</p>
+<p>Tony<br />
+Head of User Experience<br />
+<img src="http://i.imgur.com/PJ61gyDl.jpg" alt="" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/09/17/tech-tuesday-the-importance-of-data/#comments" title="Comment on Tech Tuesday: The Importance of Data">19 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-3109 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-3109"><a href="http://imgur.com/blog/2013/08/27/tech-tuesday-technical-debt/" rel="bookmark" title="Permanent Link to Tech Tuesday: Technical Debt">Tech Tuesday: Technical Debt</a></h2>
+				<div class="textbox">
+					<small>Tuesday, August 27th, 2013</small>
+
+					<div class="entry">
+						<p>I want to talk about technical debt, which is a phrase coined by Ward Cunningham to describe what happens to software projects over time when an approach to solve a problem is chosen by virtue of being the most expedient. The quick and dirty hack solves the problem now but has costs associated with it later, including maintenance and learning. There are some great articles (including <a href="http://www.construx.com/10x_Software_Development/Technical_Debt/">one by Steve McConnell</a>) that describe it at length. I want to focus on why I agree with <a href="http://www.codinghorror.com/blog/2009/02/paying-down-your-technical-debt.html">Jeff Atwood</a> that “technical debt is unavoidable on any real software project,” and identify a new category of technical debt not addressed by McConnell.</p>
+<p><center><img alt="" src="http://i.imgur.com/DNFRdl.jpg" /></center></p>
+<p>Steve McConnell rightly distinguishes between two kinds of debt: intentional and unintentional. The latter is simply the result of unintentional errors. This happens when a design “just turns out to be error-prone,” or a junior programmer “just writes bad code.” More broadly, this kind of debt is the result of incomplete information when making a decision, such as what design to use or knowledge about what’s good and bad practice. We never make decisions with full information so it is necessarily true that there will be debt like this. I think McConnell underplays the prevalence of this kind of debt; he spends most of the article discussing intentional debt but unintentional debt is just as prevalent. All code is written with some assumptions, so if any of those assumptions turns out to be false then the code must be changed and your company has acquired debt.</p>
+<p>There is another kind of technical debt that accumulates necessarily in software projects, which is code whose requirements have changed. All code is written with some requirements in mind. It might seem reasonable at one stage to only target MySQL as your database, but if at any point the requirements change so that you need to support multiple databases, then not only do you have to go out and write the new code, you also need to go back and fix the old code where it assumed that there would only ever be one database, and that that database would only ever be MySQL. The implicit assumptions generated by requirements can be pervasive — if you switch to SQL server then <a href="http://stackoverflow.com/questions/261455/using-backticks-around-field-names/261475#261475">you can’t be using backticks in your queries</a>. Requirements that change are a bit different than assumptions that turn out to be false, because at some point it was perfectly valid to, for example, use backticks in your queries. Requirements changes also almost always incur technical debt, and can invalidate swaths of code. This ends up being the reason why contract workers are so fickle about requirements.</p>
+<p>Technical debt is largely unavoidable. Requirements change, and decisions are made which turn out to be based on bad reasons, which all incur indebtedness. The only way to service technical debt is to go back and rewrite it the right way. McConnell suggests a few eminently reasonable things to do if you’re worried about technical debt, one of which is just doing some basic accounting of your time. How much time are you spending on “servicing the debt” versus actual product development? If you aren’t worried about technical debt, maybe you should be. McConnell warns of the risks of unaddressed technical debt:</p>
+<p  style="margin-left: 10px; border-left: 2px solid #2b2b2b; padding: 0 10px">If the debt grows large enough, eventually the company will spend more on servicing its debt than it invests in increasing the value of its other assets. A common example is a legacy code base in which so much work goes into keeping a production system running (i.e., &#8220;servicing the debt&#8221;) that there is little time left over to add new capabilities to the system. With financial debt, analysts talk about the &#8220;debt ratio,&#8221; which is equal to total debt divided by total assets. Higher debt ratios are seen as more risky, which seems true for technical debt, too.</p>
+<p>Most of all, it’s important to have the problem of technical debt be visible and addressed. The language of technical debt is a great way to convey to even non-technical managers and executives the nature of the problem, which is one step closer to fixing it.</p>
+<p>Jake<br />
+Front End Engineer</p>
+<p><img alt="" src="http://i.imgur.com/iA5SsHC.jpg?1" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/08/27/tech-tuesday-technical-debt/#comments" title="Comment on Tech Tuesday: Technical Debt">9 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-3066 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-3066"><a href="http://imgur.com/blog/2013/08/13/tech-tuesday-ad-team-takeover/" rel="bookmark" title="Permanent Link to Tech Tuesday: Ad Team Takeover">Tech Tuesday: Ad Team Takeover</a></h2>
+				<div class="textbox">
+					<small>Tuesday, August 13th, 2013</small>
+
+					<div class="entry">
+						<p>We are always seeking ways in which to engage, entertain and involve Imgurians with all things Imgur. Over the past several months, we’ve had a couple opportunities in which to do that using galleries. Using the same underlying infrastructure that powers our front page gallery, we created individual galleries to host contests.  </p>
+<p>The first opportunity happened after a chance meeting with Doug, from the <a href="http://awkwardfamilyphotos.com">Awkward Family Photos</a> team during the AdTech weekend here in San Francisco. The resulting collaboration asked fans of both websites to recreate selected photos from the Awkward Family Photos <a href="http://imgur.com/a/OOFji">archives</a> and use Imgur to share them with your friends and (maybe) family. The result was more awkward than we could have imagined.</p>
+<p><img src="http://i.imgur.com/vgsjW0gl.png" alt="" /></p>
+<p>And our winner is: </p>
+<p><img src="http://i.imgur.com/CJNq8n9l.png" alt="null" /></p>
+<p>Building on the success of this contest, we followed up by asking our community to ‘model’ Imgur merchandise for use in our store.  Again Imgurians grabbed the giraffe by the monocle and delivered some great shots of themselves showing off their Imgur gear.</p>
+<p><img src="http://i.imgur.com/N8mw7Gzl.png" alt="" /></p>
+<p>You can view the latest Imgur merchandise <a href="http://store.imgur.com">here</a> to see your fellow Imgurians in action.</p>
+<p>As we continue to move forward, we are always looking for new, fun ways in which we can engage and involve Imgurians using galleries.  Please take a moment to drop us a comment with your ideas on how we can use galleries for contests, campaigns, promotions or any other awkward ideas you may have. </p>
+<p>Brad Kessler<br />
+Inside Sales Manager, Imgur<br />
+<img src="http://i.imgur.com/EMD4m1Q.png" alt="" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <span>Comments Off</span></p>
+			</div>
+
+						<div class="post-3014 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-3014"><a href="http://imgur.com/blog/2013/07/30/tech-tuesday-ios-programming/" rel="bookmark" title="Permanent Link to Tech Tuesday: iOS Programming">Tech Tuesday: iOS Programming</a></h2>
+				<div class="textbox">
+					<small>Tuesday, July 30th, 2013</small>
+
+					<div class="entry">
+						<p>In my time as an Intern at Imgur, the one job I found myself doing most often was learning.</p>
+<p>My job was creating an entirely new iOS app<b>*</b> from the ground up &#8211; one that not only differed from existing apps, but was also written in a language that I didn&#8217;t fully know: Objective C. Previously, I had written my apps entirely in Javascript and used wrappers such as Titanium and Phonegap to compile and translate from Javascript to native Objective C. These wrappers have their benefits; they allow for simpler, faster development, without any prior knowledge of device-specific languages such as Apple&#8217;s Objective C. Ultimately, however, they add an unnecessary layer of abstraction that (usually) degrades performance.</p>
+<p>For these reasons, Imgur decided that the new app should be native. The only problem with this was that <b>I had never programmed a native iOS app before.</b> Fortunately, tutorials, guides, and references on iOS programming are not hard to find. After a few weeks browsing Apple&#8217;s developer library, following courses on <a href="http://www.codeschool.com/">Codeschool</a>, and reading answer after answer on <a href="http://stackexchange.com/">Stack Exchange</a>, I was ready to begin.</p>
+<h2>The Technicals</h2>
+<p>At its heart, Objective C is an extension of C. Anything library, class, function, or piece of code that is written in C can function fully and well in an Objective C program.</p>
+<p>Objective C, however, adds a great deal to the C language. The core differences that come to mind are:</p>
+<ul>
+<li><b>ARC &#8211; Automatic Reference Counting:</b> A method of automatic memory management handled by the compiler.</li>
+<p></p>
+<li><b>Loose type casting</b> &#8211; objects in Objective C can be cast as &quot;id&quot;s, essentially meaning an object of unknown type.</li>
+<p></p>
+<li><b>Messaging</b> &#8211; A method of invoking functions on objects by sending &quot;messages&quot; rather than calling class methods (similar to Smalltalk).</li>
+</ul>
+<p>As a whole, the extra functionality provided by Objective C allows for more dynamic, flexible programming than is possible in pure C. For example, consider the task of creating an array of integers and words:</p>
+<p><br/></p>
+<h3>Objective C:</h3>
+<pre>NSMutableArray * array = [[NSMutableArray alloc] init];
+[array addObject:@"Five"];
+[array addObject:[NSNumber numberWithInt:5]];</pre>
+<p><br/></p>
+<h3>C:</h3>
+<pre>char * string = "Five";
+int * integer = (int*)malloc(sizeof(int));
+*integer      = 5;
+void ** array = (void**)malloc(sizeof(void*)*2);
+array[0]      = (void*)string;
+array[1]      = (void*)integer;</pre>
+<div style="font-size:0.8em">Note: This could also be achieved in C by using a Union; however, this would lead to unused memory in an array (due to how Unions are allocated) and still restricts the data types allowable.</div>
+<p><br/></p>
+<p>In this example, not only is the Objective C code simpler and easier to read, it is also enormously more flexible. The Objective C array can store an arbitrary number of objects, each of arbitrary class or type. In contrast, the C array must be reallocated whenever its size is changed, and can only store objects of a single type. This single type requirement can be circumvented by casting objects to void pointers (void*), but there is no way of then determining the original type of a void pointer. Lastly, the array must ultimately be freed in C, so as to avoid a memory leak.</p>
+<h2>Performance</h2>
+<p>Though Objective C has some benefits over C, there are some tradeoffs in terms of performance. In benchmarks, Objective C has been shown to be consistently slower than equivalent C or C++ code, by roughly a 20-30% speed difference:</p>
+<p><img src="http://i.imgur.com/EHnCBIAl.png" alt="" /></p>
+<h4>Source: <a href="http://rmarcus.info/?p=488">http://rmarcus.info/?p=488</a></h4>
+<p>This makes it slightly faster than bytecode languages such as Java, and significantly faster than interpreted languages such as Ruby or Python. These statistics, however, are highly dependent on compiler, language implementation, platform, and even purpose of the program. For certain applications, Objective C can be faster than C, while for others it may take twice as long.</p>
+<h2>Conclusion</h2>
+<p>Ultimately, Objective C is a superset of C that provides great improvements in ease and readability of programs at a fraction of the performance costs that come with interpreted languages such as Python or Ruby. On top of this, tools provided by Apple such as the &quot;Interface Builder&quot; and Grand Central Dispatch (a convenience thread toolkit) make Objective C an extremely easy and convenient language, well worth taking the time to learn.</p>
+<p><span>Spencer</span><br />
+<span>Summer Intern</span></p>
+<p><img src="http://i.imgur.com/t2mZMGgl.jpg?1" alt="" /></p>
+<p><b>*</b>The new app will supplement the existing Imgur app, rather than replace it.</p>
+<h3>Additional Links:</h3>
+<p><span>Objective C Performance: <a href="http://rmarcus.info/?p=488">http://rmarcus.info/?p=488</a></span><br />
+<span>Java / C / C++ Performance: <a href="http://benchmarksgame.alioth.debian.org/u32/java.php">http://benchmarksgame.alioth.debian.org/u32/java.php</a></span></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/07/30/tech-tuesday-ios-programming/#comments" title="Comment on Tech Tuesday: iOS Programming">18 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-2904 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-2904"><a href="http://imgur.com/blog/2013/07/16/tech-tuesday-using-grunt-to-simplify-deployment-processes/" rel="bookmark" title="Permanent Link to Tech Tuesday: Using Grunt to Simplify Build Processes">Tech Tuesday: Using Grunt to Simplify Build Processes</a></h2>
+				<div class="textbox">
+					<small>Tuesday, July 16th, 2013</small>
+
+					<div class="entry">
+						<p><a href="http://imgur.com/gallery/WLmW4">Albert Einstein</a> once said, it&#8217;s important to &#8220;make things as simple as possible, but not simpler.&#8221; Simplicity is a virtue and literally part of our motto. We had a variety of tools to pick and choose from while building the mobile app. Ultimately, something had to fold all our code together in various forms and act as an all-purpose build process. We found these qualities in <a href="http://gruntjs.com/">Grunt</a>. Following the instructions on its Getting Started pages, the system was in place in a matter of minutes.</p>
+<p>Here are some of the things we wanted to do originally:</p>
+<ul>
+<li>Preprocess the index.html template<br />
+    This lets us distinguish between builds for different platforms. E.g. Android vs. iOS vs. Web</p>
+</li>
+<li>Compile the templates into a single template file<br />
+    Less requests means faster load times. The single most important load time to minimize is the first one.</p>
+</li>
+<li>Minify the CSS and JS<br />
+    Both are interpreted languages which parse and run faster when there&#8217;s less characters to be parsed.</p>
+</li>
+<li>Lint the existing codebase for semantic gotchas<br />
+    A standard software engineering practice that catches subtle kinks in the code before they get out of hand.</p>
+</li>
+<li>Run shell tasks as build phases<br />
+    Handy for moving files around or further automation during intermediary stages of a build process.</p>
+</li>
+<li>Connect to the PhoneGap Build system<br />
+    We used this system in the early stages of the app to keep things relatively uniform across Android and iOS platforms.</p>
+</li>
+</ul>
+<p>The process had to be fast so that devs wouldn&#8217;t be reluctant to iterate and build quickly. It would also need different build profiles for whether the app was being built for testing (debug), as a pre-release stage (to be tested by non-devs), or as a release (for potential submission to app stores).</p>
+<h2>A typical Gruntfile</h2>
+<p>A Gruntfile is a file that lives in the root directory of your project repo and contains all the info needed for the Grunt tool to do whatever it is you want it to do, which means tasks need to be defined (tells it how things are going to be done) and registered (tells it what things are going to be done). When you run Grunt, you pass it an argument that tells it which task you want it to perform. Leaving this argument blank means you want it to run the default task.</p>
+<h4>Sample Gruntfile.js</h4>
+<pre>
+module.exports = function(grunt) {
+
+  grunt.initConfig({
+    pkg : grunt.file.readJSON('package.json'),
+    
+    preprocess : {
+        dev : {
+            options : {
+                context : { ENV : 'dev' }
+            },
+            src  : 'template.html',
+            dest : 'base.html'
+        },
+        production : {
+            options : {
+                context : { ENV : 'production' }
+            },
+            src  : 'template.html',
+            dest : 'base.html'
+        }
+    }
+    
+    shell : {
+        clean : {
+            command : 'rm build/release/*.min.js ; rm *.zip ; rm index.html'
+        }
+    },
+    
+    uglify: { ... },
+    
+    'phonegap-build' : { ... },
+        
+    zip : { ... }
+    
+  });
+
+  
+  grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-preprocess');
+  grunt.loadNpmTasks( ... );
+
+  grunt.registerTask(
+      'default',
+      ['preprocess:dev', 'shell:compileTemplates']
+  );
+
+  grunt.registerTask(
+      'production',
+      ['shell:clean', 'preprocess:production', 'uglify', 'zip]
+  );
+  ...
+  
+};
+</pre>
+<p>In this sample Gruntfile, there are 3 distinct sections that pertain to configuring tasks.</p>
+<h4>Section 1 : Task configuration</h4>
+<p>Inside the CommonJS module wrapper <code>module.exports = function(grunt) { ... };</code>, we have our first function call which defines the task namespaces and the options that are passed to each task under those namespaces.</p>
+<p>For instance, <code>process : { ... }</code> is a task namespace which has the option to be run in <code>dev</code> mode or<br />
+<code>production</code> mode, each with different options. <i>In layman&#8217;s terms, this is a recipe page for the baker which has<br />
+the instructions to &#8220;put icing on the cake&#8221;, which can be done with &#8220;chocolate icing&#8221; or &#8220;vanilla icing&#8221;.</i></p>
+<p>The great thing about Grunt is the namespacing of these tasks which lets us reuse parts of one task namespace to accomplish the same thing for another task. e.g. Both &#8220;Bake me a birthday cake for Joe&#8221; and &#8220;Bake me Sue&#8217;s favorite cake&#8221; involve the task of &#8220;putting the cake into the oven&#8221;. To refer to the different modes within a task, think of the task string as a JSON property path (JSONObj.Key.Value) but instead of periods, use colons: JSONObj:Key:Value.</p>
+<p>This not only makes it easy to reuse code from one task to another but it makes writing the configurations for new tasks effortlessly simple. The bulk of the Gruntfile lives in this section.</p>
+<h4>Section 2 : Plugin registration</h4>
+<p>Next, we have to tell Grunt what plugins we&#8217;ve installed and when we do particular things that refer to them; telling the baker there&#8217;s a large spatula in the kitchen to spread the icing. This section is simple, since all we need to do is install the plugins and tell Grunt that they&#8217;re there.</p>
+<pre>grunt.loadNpmTasks('grunt-preprocess');</pre>
+<p><i>Load the &#8220;preprocess&#8221; plugin and combine it with the arguments we set up in section 1.</i></p>
+<h4>Section 3 : Task registration</h4>
+<p>Finally, Grunt needs to know in what order to complete the tasks. This section is all about registering a &#8220;recipe&#8221; so that tasks are sequential.</p>
+<pre>grunt.registerTask('production', ['shell:clean', 'preprocess:production', 
+'uglify', 'zip]);</pre>
+<p><i>Register &#8216;production&#8217; as a recipe. First clean up, then uglify, then bundle all the stuff into a zip.</i></p>
+<p><center><a href="http://imgur.com/gallery/lzDva8x"><img src="http://i.imgur.com/lzDva8xl.jpg" alt="" /></a></center></p>
+<h2>Running Grunt</h2>
+<p>Running Grunt is as easy typing <code>grunt production</code>. That would run the &#8220;production&#8221; recipe.</p>
+<p>Here are the plugins we&#8217;ve found to be useful:</p>
+<ul>
+<li><a href="https://npmjs.org/package/grunt-preprocess">preprocess</a></li>
+<li><a href="https://npmjs.org/package/grunt-shell">shell</a></li>
+<li><a href="https://npmjs.org/package/grunt-contrib-concat">concat</a></li>
+<li><a href="https://npmjs.org/package/grunt-contrib-uglify">uglify</a></li>
+<li><a href="https://npmjs.org/package/grunt-contrib-cssmin">cssmin</a></li>
+<li><a href="https://npmjs.org/package/grunt-contrib-jshint">jshint</a></li>
+<li><a href="https://npmjs.org/package/grunt-zipstream">zipstream</a></li>
+<li><a href="https://npmjs.org/package/grunt-phonegap-build">phonegap-build</a></li>
+</ul>
+<p>Thus far, we&#8217;ve found Grunt to be a wonderful tool that ties it all together. It&#8217;s simple and it just works. Moreover, there&#8217;s a huge collection of open source projects and a vibrant community that we can turn to for help if need be.</p>
+<p>Jim<br />
+JavaScript Engineer<br />
+<img src="http://i.imgur.com/DL1QPt0l.jpg" alt="" /></p>
+<p>Note: Tech Tuesday will now be bi-weekly. </p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/07/16/tech-tuesday-using-grunt-to-simplify-deployment-processes/#comments" title="Comment on Tech Tuesday: Using Grunt to Simplify Build Processes">7 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-2849 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-2849"><a href="http://imgur.com/blog/2013/07/02/tech-tuesday-modular-javascript-jasmine-and-workflows/" rel="bookmark" title="Permanent Link to Tech Tuesday: Modular JavaScript, Jasmine, and workflows">Tech Tuesday: Modular JavaScript, Jasmine, and workflows</a></h2>
+				<div class="textbox">
+					<small>Tuesday, July 2nd, 2013</small>
+
+					<div class="entry">
+						<p>Software development is always at least a two-faceted enterprise. On the one hand, you have to work on a gigantic code base, tweaking and writing new features and fixing bugs. On the other, the process of writing the code itself needs to be tuned so that the former process can sail smoothly and swiftly. Today we’re going to talk about a key concept that software developers use to manage the complexity of this situation called modularity, and some challenges in the typical web application stack that arise.</p>
+<p>For well-developed programs that have been running and accumulating features for a while, the amount of code that accumulates is actually surprising. Most applications running right now are written in a sort of dual nature. There’s the “client-side” &#8211; everything that happens after your browser gets information back from Imgur’s servers, and then there’s “server-side” &#8211; everything before that. In our case, the server-side runs on PHP and the client-side runs extensively on JavaScript. For one page alone &#8211; say, <a href="http://imgur.com/gallery/qWktD1G">the inside gallery</a>, there are about ten thousand lines of code. If we didn’t have modularity, it’d be quite hard to get anything done because everything would be mixed together. The code for the comments would be intermingled with the code that handles the global uploader, with the code that handles going to the next and previous image in the gallery, etc.</p>
+<p>The trouble is that JavaScript doesn’t have modules or <a href="https://en.wikipedia.org/wiki/Class_%28computer_programming%29">classes</a>, at least not natively. <a href="http://h3manth.com/content/classes-javascript-es6">There are proposals</a>, but they’re miles away from being implemented widely. We’re using a few tools that together give us a module system. We use <a href="http://ejohn.org/blog/simple-javascript-inheritance/">a class system</a> written by the founder of jQuery, John Resig. Once we can separate our code into separate classes like <strong>Imgur.Upload.Global</strong> for the global uploader, <strong>Imgur.InsideNav</strong> for the code handling the next and previous gallery images, and <strong>Imgur.Caption</strong> for handling captions, then we have a good foothold on splitting things up. The Imgur.Caption file itself is only around 900 lines! Once we have all these different classes in different files we use a minify script to automatically combine all the code for the inside gallery into one JavaScript file. If we didn’t do that, then we’d have to include all the files individually &#8211; <em>caption.js, insidenav.js, upload/global.js, upload.js, …..</em> Then we’d have to worry about what happens if one of them hasn’t loaded yet &#8211; all solved by enforcing atomicity on our JavaScript by putting it all in one file (automatically).</p>
+<p>Another great tool that we’re working towards using is Jasmine. Jasmine is a unit testing framework for JavaScript. Unit testing is the process by which individual modules &#8211; say, the <strong>Imgur.Caption</strong> module &#8211; is tested to make sure it works as expected. That way, if we ever change anything accidentally to produce a different result, then we’ll know because the unit tests will fail. If you integrate Jasmine with the <a href="http://www.browserstack.com/automated-browser-testing-api">BrowserStack cloud</a>, you can run all your unit tests across all major browsers from the command line. Writing code without tests to prove it’s right is a bit like driving in heavy rain with the wipers off; properly written and judiciously applied unit tests prevent the problem of <a href="http://imgur.com/gallery/FYz7Ief">features suddenly not working</a> because it was changed.</p>
+<p>We will continue to refine our development process. As an Imgurian, you’ll see that things like the OP text stopping working happen much less frequently. You’ll see that your feature requests take days rather than weeks. Problems will be nipped in the bud before they even go out. In the evanescent world of state-of-the-art web development, it’s tricky to know what tools to adopt and when to stick with tried and true practices. We hope that as we adopt technologies like <a href="http://gruntjs.com/">Grunt</a>, Jasmine, BrowserStack, and others that Imgurians everywhere can benefit from it. </p>
+<p>Jake<br />
+Front End Engineer<br />
+<img src="http://i.imgur.com/iA5SsHCl.jpg?1" alt="" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/07/02/tech-tuesday-modular-javascript-jasmine-and-workflows/#comments" title="Comment on Tech Tuesday: Modular JavaScript, Jasmine, and workflows">7 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-2761 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-2761"><a href="http://imgur.com/blog/2013/06/18/tech-tuesday-running-hbase-on-ec2/" rel="bookmark" title="Permanent Link to Tech Tuesday: Running HBase on EC2">Tech Tuesday: Running HBase on EC2</a></h2>
+				<div class="textbox">
+					<small>Tuesday, June 18th, 2013</small>
+
+					<div class="entry">
+						<p>Since our last post about HBase, we&#8217;ve been doing a lot of experimentation on EC2. We&#8217;ve learned so many things about how to run HBase in an elastic environment. You run into many of the same issues that you do on dedicated hardware, but you deal with them differently in many cases. If you search online, you may read that running Hadoop and HBase on EC2 is a bad idea, but that is no longer the case. Companies like Pinterest have been doing so successfully, and it&#8217;s an inspiration for us to do well. There was a lot of research on our part, and I&#8217;d like to share some of our findings in hopes that it will help others trying to work on EC2.</p>
+<p><strong>Storage volumes for DataNodes</strong></p>
+<p>AWS provides two types of storage: instance store (ephemeral) volumes and EBS volumes. In addition, EBS volumes can be optimized by using provisioned IOPS. We&#8217;ve played around with both types, and run numerous tests using Linux tools like fio and dd. This was to determine the type of storage that would be best for our DataNodes.</p>
+<p>We found that instance stores outperform EBS volumes when it comes to sequential I/O, while EBS drives are better at random access patterns when using provisioned IOPS of 200 and above.</p>
+<p><center><img src="http://i.imgur.com/n2CA4.gif" alt="" /></center></p>
+<p>What does this tell us? HDFS is designed for sequential I/O. If we can minimize the number of disk seeks then we can probably get some good performance using instance store volumes.</p>
+<p>We like EBS with provisioned IOPS volumes because of their various beneficial properties. They can be as big as a 1TB, and data in them will persist after the instance is restarted. You can mount many of them on an instance to spread the I/O and adding more EBS drives increases write performance. They are expensive, however, so we discarded this approach. We also discarded standard EBS because it cannot deliver consistent performance.</p>
+<p>Needless to say, our DataNodes use instance store volumes. If we run out of space or if we need more I/O, we&#8217;ll add more instances to the cluster. Easy enough with EC2.</p>
+<p><strong>Instance types and root volume</strong></p>
+<p>There are a few options for this. We chose m1.xlarge instances. The reason is that it provides a good balance of resources. 1.6TB of storage distributed among four volumes and 15 GB of RAM to feed a memory-hungry HBase. Another option could have been m1.large, but it only supports 7.5 GB of RAM and 2x420GB volumes (the <a href="http://wiki.apache.org/hadoop/DiskSetup">HBase experts recommend</a> &#8216;a lot&#8217; of disks per server). For clusters that are CPU bound c1.xlarge instances might be appropriate. I&#8217;ve also heard of cases where SSD storage is used. This is probably for clusters that require very high write throughput.</p>
+<p>We&#8217;ll try m1.xlarge instances for now and see how that works in production. We can always change instance types if we need to. Lastly, all our instances are EBS-backed. Definitely something worth doing. The cost difference is minimal, and it is much easier to work with if we need to make changes to the root device.</p>
+<p><strong>MapReduce</strong></p>
+<p>Initially, I thought we would use the HBase cluster to run MapReduce jobs, but then I remembered that Amazon EMR exists! It&#8217;s cool if you can run MapReduce jobs in your own HBase cluster, but then you introduce a new class of problems. For instance, HBase could take a performance hit if a running job is competing for CPU and I/O resources. You&#8217;d have to configure your cluster such that it takes HBase and MR into account. Still, there are reasons for why you might run jobs in your HBase cluster. Data locality is the best one I can think of: you reduce network activity and increase job performance.</p>
+<p>With that said, we have &#8216;light&#8217; and &#8216;heavy&#8217; jobs. Light jobs are run in the HBase cluster. The idea is that such jobs will have a minimal effect on performance. Heavy jobs will be run on EMR and insert data into HBase if they need to. We don&#8217;t have many jobs yet, but as we write more, this is what we&#8217;ll try.</p>
+<p><strong>Rack awareness</strong></p>
+<p>Hadoop can be configured for rack awareness. This means that HFile blocks can be replicated on different racks for higher failure-tolerance. On EC2, you can treat availability-zones as racks. If one availability-zone goes down, we can count on the data being in another availability-zone.</p>
+<p><center><img src="http://i.imgur.com/i9fPA.gif" alt="" /></center></p>
+<p>There were concerns that cross-AZ traffic would be slow. We ran some tests to know exactly how much, and we found that response time is unaffected, and that latency increased by a negligible amount. Thus, performance was good. Another concern is the cost to send data from one AZ to another which is $0.01/GB. It doesn&#8217;t sound like much, but at scale it can add up pretty quickly. Our cluster is small so the extra cost is acceptable, and in production it&#8217;s always nice to have another layer of failure-tolerance.</p>
+<p><strong>HBase Backups</strong></p>
+<p>We are lucky to be in a time where <a href="http://hbase.apache.org/book/ops.snapshots.html">HBase Snapshots</a> are a thing. Previously, and this was only about three months ago, backups had to be done by dumping a table on a row by row basis, or by copying the underlying HFiles while HBase was actively making changes to the file system. A year ago, I wrote <a href="https://github.com/oclc/HBase-Backup">a tool</a> that did the latter, but it meant that performance could be affected since I/O and network activity would increase during the backup stage. With built-in HBase Snapshots, there is minimal impact on the cluster because there is no need to copy any HFiles, and the snapshots are generated very quickly.</p>
+<p><center><img src="http://i.imgur.com/Ie17FZ6.gif" alt="" /></center></p>
+<p>If we need to restore a table, it can also be done with minimal effect on the cluster. Soon we will be exporting those snapshots to S3 for safekeeping. We&#8217;ve already tested this approach and it works well. The only issue we see is the increased I/O at the HDFS level while we copy files in and out of S3.</p>
+<p>There are many other aspects of the HBase cluster that we have not mentioned here. It&#8217;s a lot to cover, but these were some of the topics that we initially explored when we started this project. We&#8217;ve made a lot of progress. Our goal is to have HBase in production in the next few weeks serving real time requests.</p>
+<p>Carlos<br />
+Software Engineer<br />
+<centeR><img src="http://i.imgur.com/9DsgeAAl.jpg" alt="" /><center></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/06/18/tech-tuesday-running-hbase-on-ec2/#comments" title="Comment on Tech Tuesday: Running HBase on EC2">18 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-2546 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-2546"><a href="http://imgur.com/blog/2013/06/11/tech-tuesday-real-time-messaging/" rel="bookmark" title="Permanent Link to Tech Tuesday: Real Time Messaging">Tech Tuesday: Real Time Messaging</a></h2>
+				<div class="textbox">
+					<small>Tuesday, June 11th, 2013</small>
+
+					<div class="entry">
+						<p>Almost a year ago, we released the Imgur <a href="http://imgur.com/blog/2012/06/19/new-gallery-features/">messaging system</a>. When the messaging system was first developed, we had no data on how it would be used, how much users would be communicating, or how long conversations would last. In designing the feature, we chose to go with a more email-like interface and functionality. This worked wonderfully for a long time, but recently we have found that Imgurians have been creating friendships via messaging and continuing conversations for longer. This left the messages page cluttered and your scrolling finger tired, leading us to re-think this feature set.</p>
+<p>The new design:<br />
+<a href="http://i.imgur.com/phuvRhJ.png"><br />
+<img src="http://i.imgur.com/phuvRhJ.png" alt="" /><br />
+</a></p>
+<p>We are now in the later stages of development on the new messaging system. The chat style layout allows conversations of any size to be manageable.  On the right is the list of users with whom you currently have conversations. Clicking on these loads the conversation into the left panel. It also includes the number of messages in that conversation and whether or not it&#8217;s unread. The plus sign allows you to create a new conversation with a user. The left panel contains the actual conversation, starting with the newest message on the bottom. You can use the refresh button to refresh the conversation or the gear menu to delete, block or report a conversation.</p>
+<p>This new conversation-based design updates in real time as new messages come in. In the past, developers had to rely on polling to the database every so often to see changes; <a href="http://en.wikipedia.org/wiki/WebSocket">websockets</a> have changed that. They allow push notification to happen in real time. I am currently in the experimental stages of setting up a <a href="http://nodejs.org/">node.js</a> cluster to handle real-time notifications and messages. Node allows you to write lightweight web servers that can handle many data-intensive tasks while allowing a large number of concurrent users. This is perfect for Imgur, since at peak times we have over 150,000 users on the site.  </p>
+<p>Our preliminary cluster design looks something like this (check out <a href="http://imgur.com/blog/2013/06/04/tech-tuesday-our-technology-stack/#comments">last week&#8217;s Tech Tuesday</a> to see our full stack):</p>
+<div class="center">
+<img src="http://i.imgur.com/jxHmedM.png?1" alt="" />
+</div>
+<p><a href="http://en.wikipedia.org/wiki/WebSocket">Websockets</a> will connect to the Proxy Cluster then be routed to the node cluster where they will execute a handshake and be stored in Redis memory store. Using Redis as our memory store allows the Node cluster to scale up to meet our traffic needs without having to keep track of which server a user originally hit. When User A sends a message to User B the request will hit our WWW server and do a <a href="http://redis.io/topics/pubsub">Redis publish</a>.  Meanwhile, the node servers are subscribed to that channel and will get an event fired when the publish is executed.  When that happens, it will search Redis for User B’s socket and use that to emit a notification to User B. The result? User B is instantly notified when someone sends him a message or replies to one of his comments. </p>
+<div class="center">
+<img src="http://i.imgur.com/tPRVcLb.gif" alt="" />
+</div>
+<p>Our hope is that by offloading as much of the memory management as possible to Redis, we will take strain off our node servers and be able to still run the notoriously high memory socket.io plugin. Since this is just a preliminary infrastructure design and no benchmarking has taken place, I’d love to hear any suggestions or thoughts you guys might have.  What has worked for you and what hasn’t? </p>
+<p>Brian<br />
+Front End Engineer<br />
+<img src="http://i.imgur.com/fJFOfIDl.jpg?1" alt="" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/06/11/tech-tuesday-real-time-messaging/#comments" title="Comment on Tech Tuesday: Real Time Messaging">35 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-2417 post type-post status-publish format-standard hentry category-tech-tuesday">
+				<h2 id="post-2417"><a href="http://imgur.com/blog/2013/06/04/tech-tuesday-our-technology-stack/" rel="bookmark" title="Permanent Link to Tech Tuesday: Our Technology Stack">Tech Tuesday: Our Technology Stack</a></h2>
+				<div class="textbox">
+					<small>Tuesday, June 4th, 2013</small>
+
+					<div class="entry">
+						<p>About a year and a half ago we moved from dedicated servers over to <a href="http://aws.amazon.com/">AWS</a>. Since then, a lot has changed in how we think about servers and what goes on behind the scenes. This Tech Tuesday is dedicated to revealing the magic behind how the site operates in the cloud.</p>
+<p><strong>Clusters and Instances:</strong><br />
+Thanks to AWS, we no longer have to think on a server level. Instead, we think of everything as a cluster of <a href="http://aws.amazon.com/ec2/#instance">instances</a>, and an instance is essentially a virtual server where we don&#8217;t have to worry about the hardware. We never have less than two instances per cluster (in case one goes down), and some clusters can have as many as 50 during peak times. Each instance in a cluster is the same as the rest in the cluster, and every cluster is spanned across at least two availability zones in case one has an outage. We&#8217;re also able to shutdown any instance at any time (even randomly if we feel like it) because when an instance goes down another takes its place within a few minutes.</p>
+<p>It&#8217;s a relief to not have to worry about the hardware behind the instances. If one instance becomes unresponsive, then it&#8217;s automatically terminated and a new one is spawned. As long as the instances aren&#8217;t regularly becoming unresponsive, we generally don&#8217;t care what happened to it because by the time we even notice, the new instance has already taken over. There&#8217;s no impact to the end users because the load balancers are smart enough to automatically route traffic away from problematic instances before they&#8217;re even terminated.</p>
+<div style="margin-top: 5px">
+<div class="left" style="width: 300px; margin-left: 5px">
+Every cluster has <a href="http://aws.amazon.com/autoscaling/">AWS AutoScaling</a> configured for it. This lets us start up more instances automatically if we have spikes in traffic. Additionally, if we have too many instances and not enough traffic, then automatically shut some down to save a few dollars on our AWS bill. Autoscaling is arguably the best feature AWS has to offer, and if you&#8217;re not using it than you better have a good reason as to why not.
+</div>
+<div class="right"><img src="http://i.imgur.com/yBIuOXw.png" width="300" /></div>
+<div class="clear"></div>
+</div>
+<p>The clusters we have are: WWW, API, Upload, <a href="http://haproxy.1wt.eu/">HAProxy</a>, <a href="http://hbase.apache.org/">HBase</a>, <a href="http://dev.mysql.com/">MySQL</a>, <a href="http://memcached.org/">Memcached</a>, <a href="http://redis.io/">Redis</a>, and <a href="http://www.elasticsearch.org/">ElasticSearch</a>, for an average total of 80 instances. Each cluster handles the job that its name describes, all working together for the common goal of giving you your daily (hourly?) dose of image entertainment.</p>
+<p><strong>A walk through the typical Imgur request:</strong><br />
+Every request for Imgur first has to go through the HAProxy cluster. The first thing that happens when it reaches this cluster is Nginx checks if it already has a cached version of the response available. Every single page on Imgur is cached for 5 seconds, a technique commonly called <a href="http://www.howtoforge.com/why-you-should-always-use-nginx-with-microcaching">microcaching</a>. If you&#8217;re not signed into Imgur and you&#8217;re accessing a popular page, then chances are this is where your request will end. If no cached version of the page is available, then the request goes to HAProxy which decides which cluster will handle the rest of it. If you&#8217;re accessing imgur.com then you&#8217;ll go to the WWW cluster, api.imgur.com will go to the API cluster, and if you&#8217;re uploading or editing an image, you&#8217;ll go to the Upload cluster.</p>
+<p>When you hit the WWW cluster you&#8217;ll be round-robin&#8217;d to an instance which will handle the request. This cluster is hooked up to the Memcached, Redis, MySQL, HBase, and ElasticSearch clusters. Since the site is coded in PHP, you&#8217;ll first reach Nginx which will send you off to php-fpm. Unless all the data for the page is cached in Memcached (highly likely), then you&#8217;ll probably be getting the data from the MySQL cluster. If your request is for a gallery search, then you&#8217;ll get the data from the ElasticSearch cluster, and some specific data is also stored in Redis and HBase. By this time, the request should have has everything it needs to form the page. It pieces it all together, travels back out to the HAProxy cluster, is microcached by Nginx, and your browser renders the page. All of this happens in mere milliseconds.</p>
+<div class="center"><img src="http://i.imgur.com/10gvO.gif" /></div>
+<p>Requests to serve direct images are much different. The first thing you should do when your website starts receiving lots of traffic is leverage a Content Delivery Network (CDN). The point of a CDN is to offload all requests to static files, such as images, css, and js files, to a faster network. CDNs are optimized to serve static content as fast as possible and will be much faster than anything you can hope to achieve with your own servers. All requests to images go to our CDN, which will check if a cached version of that image already exists on their servers. If it does, then the request never hits our infrastructure at all and the CDN displays the image. If no cached version of the image exists for them, for example if the image was just uploaded and is brand new, then the CDN grabs the image from Imgur and displays it. At this point, every subsequent request for that image will be cached on the CDN and Imgur is no longer responsible to displaying it.</p>
+<p>Below is a diagram of how they all work together:<br />
+<a href="http://i.imgur.com/GiBQsmf.png" target="_blank"><br />
+<img src="http://i.imgur.com/GiBQsmf.png" /><br />
+</a></p>
+<p>That&#8217;s about it for this Tech Tuesday. Questions are welcomed in the comments!</p>
+<p>Alan Schaaf<br />
+Founder &#038; CEO<br />
+<img src="http://i.imgur.com/zPyauGUl.jpg" alt="" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/06/04/tech-tuesday-our-technology-stack/#comments" title="Comment on Tech Tuesday: Our Technology Stack">54 Comments &#187;</a></p>
+			</div>
+
+						<div class="post-2344 post type-post status-publish format-standard hentry category-features category-news category-tech-tuesday">
+				<h2 id="post-2344"><a href="http://imgur.com/blog/2013/05/28/tech-tuesday-takeover-self-serve-ads/" rel="bookmark" title="Permanent Link to Tech Tuesday Takeover: Self-Serve Ads">Tech Tuesday Takeover: Self-Serve Ads</a></h2>
+				<div class="textbox">
+					<small>Tuesday, May 28th, 2013</small>
+
+					<div class="entry">
+						<p>Oh no! The Imgur sales guys have hijacked Tech Tuesday! Today we are going to talk a little about how we handle our advertising business. Don’t panic, this post will cover some new ad technology that we are implementing today in the hope of improving the overall role that ads have on our site. </p>
+<p>As many of you know, we are an independent bootstrapped company.  Since we offer a free service, understandably, people always want to know how we keep the lights on, pay our ginormous hosting bills and still manage to keep the Imguraffe well fed. </p>
+<p>We are able to support the company with revenue generated from ad sales, <a href="../../../register/upgrade.html">Pro accounts</a>, <a href="https://www.mashape.com/imgur/apiv3#!documentation">commercial hosting</a> and schwag from <a href="http://store.imgur.com/">the store</a>.  A sincere thanks to all of you that support us through these paid products or decide to not use Adblock while browsing Imgur! </p>
+<p>On the ad sales side, we work with large branded advertisers as well as ad networks. Ad networks are third-party companies that work with thousands of websites and hundreds of advertisers. They act as the middleman, bringing Imgur ad campaigns from advertisers we don’t work with directly. Although we have very strict guidelines for the types of ads we accept (only two formats, no auto-sound ads, no auto-expanding ads, no pop-overs or unders), we can’t always identify every campaign that’s running. Even with a ton of screening mechanisms in place, sometimes bad ads sneak through. Please know we hate these ads, too! We use every report we get through support@imgur.com to track down the offending networks and campaigns and squash them as soon as we can.   </p>
+<p>Ads play an important role in supporting the site, but we would prefer that they add value, or at least not detract from your experience.  As part of our ongoing effort to maintain better control of our ads and to improve our ad quality, we are looking to develop direct relationships with our advertisers. To forward that goal we are excited to announce a new self-serve ad platform. This new system will allow you (or your company) to easily setup an ad campaign that will be displayed to your fellow Imgurians. </p>
+<p>How does it work? Easy.</p>
+<p>1.	Visit our <a href="http://imgur.com/advertise/selfservicedisplay">self-service page</a><br />
+2.	Choose to target US only or the entire world<br />
+3.	Select your budget<br />
+4.	Upload your ad (or you can create one on the platform)<br />
+5.	Enter payment details and submit</p>
+<p><img src="http://i.imgur.com/XmFHBsbl.png" alt="" /></p>
+<p>After a quick review to ensure that the creative looks good and your landing page is working, we will set the campaign live, typically the same day. </p>
+<p>Aside from knowing that our community is full of awesome, funny, good-natured folks that love cat GIFs, we have also provided a few quick stats about our audience. If you are interested in targeting a specific geography (city or country) or if have any other questions about display ads or sponsored image ads please email us at sales@imgur.com. </p>
+<p>75M+ unique visitors (almost 50M from US)<br />
+340M total visits per month<br />
+4.1B page views per month<br />
+70% Male<br />
+Over 50% Ages 18-34</p>
+<p>Matt<br />
+Chief Operating Officer, Imgur<br />
+<img src="http://i.imgur.com/QMht5M2l.jpg" alt="" /></p>
+					</div>
+				</div>
+
+				<p class="postmetadata"> Posted in <a href="../features/index.html" title="View all posts in Features" rel="category tag">Features</a>, <a href="http://imgur.com/blog/category/news/" title="View all posts in News" rel="category tag">News</a>, <a href="index.html" title="View all posts in Tech Tuesday" rel="category tag">Tech Tuesday</a> |   <a href="http://imgur.com/blog/2013/05/28/tech-tuesday-takeover-self-serve-ads/#comments" title="Comment on Tech Tuesday Takeover: Self-Serve Ads">12 Comments &#187;</a></p>
+			</div>
+
+			
+			<div class="navigation">
+				<div class="alignleft"><a href="http://imgur.com/blog/category/tech-tuesday/page/2/" >&laquo; Older Entries</a></div>
+				<div class="alignright"></div>
+			</div>
+		
+		</div>
+
+		<div id="sidebar-wrapper">
+				<div id="facebook" class="textbox">
+		<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+		<fb:like href="http://www.facebook.com/#!/pages/Imgur/67691197470" show_faces="true" width="100" font="arial" colorscheme="dark"></fb:like>
+	</div>
+
+	<div id="sidebar" role="complementary">	
+		<ul>
+			<li id="calendar-3" class="widget widget_calendar"><h2 class="widgettitle">Posts</h2><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>June 2014</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Sunday">S</th>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://imgur.com/blog/2014/05/" title="View posts for May 2014">&laquo; May</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td><a href="http://imgur.com/blog/2014/06/02/" title="DPLA and Imgur Present: The Summer of Archives, Our Favorite Images from May 2014">2</a></td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="http://imgur.com/blog/2014/06/09/" title="Imgur, Redesigned: Tagging, Custom Galleries, and Trends, Operation Upvote">9</a></td><td>10</td><td><a href="http://imgur.com/blog/2014/06/11/" title="New Stickers &amp; Lapel Pins&#8211;User Submitted Unite!">11</a></td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td id="today">15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<ul>
+			<li><a href='http://imgur.com/blog/2014/06/'>June 2014</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2014/05/'>May 2014</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2014/04/'>April 2014</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2014/03/'>March 2014</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2014/02/'>February 2014</a>&nbsp;(5)</li>
+	<li><a href='http://imgur.com/blog/2014/01/'>January 2014</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2013/12/'>December 2013</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2013/11/'>November 2013</a>&nbsp;(7)</li>
+	<li><a href='http://imgur.com/blog/2013/10/'>October 2013</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2013/09/'>September 2013</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2013/08/'>August 2013</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2013/07/'>July 2013</a>&nbsp;(7)</li>
+	<li><a href='http://imgur.com/blog/2013/06/'>June 2013</a>&nbsp;(8)</li>
+	<li><a href='http://imgur.com/blog/2013/05/'>May 2013</a>&nbsp;(6)</li>
+	<li><a href='http://imgur.com/blog/2013/04/'>April 2013</a>&nbsp;(8)</li>
+	<li><a href='../../2013/03/index.html'>March 2013</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2013/02/'>February 2013</a>&nbsp;(5)</li>
+	<li><a href='http://imgur.com/blog/2013/01/'>January 2013</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2012/12/'>December 2012</a>&nbsp;(2)</li>
+	<li><a href='http://imgur.com/blog/2012/11/'>November 2012</a>&nbsp;(6)</li>
+	<li><a href='../../2012/10/index.html'>October 2012</a>&nbsp;(10)</li>
+	<li><a href='http://imgur.com/blog/2012/09/'>September 2012</a>&nbsp;(6)</li>
+	<li><a href='http://imgur.com/blog/2012/08/'>August 2012</a>&nbsp;(8)</li>
+	<li><a href='http://imgur.com/blog/2012/07/'>July 2012</a>&nbsp;(6)</li>
+	<li><a href='http://imgur.com/blog/2012/06/'>June 2012</a>&nbsp;(2)</li>
+	<li><a href='http://imgur.com/blog/2012/05/'>May 2012</a>&nbsp;(7)</li>
+	<li><a href='http://imgur.com/blog/2012/04/'>April 2012</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2012/03/'>March 2012</a>&nbsp;(4)</li>
+	<li><a href='http://imgur.com/blog/2012/02/'>February 2012</a>&nbsp;(3)</li>
+	<li><a href='http://imgur.com/blog/2012/01/'>January 2012</a>&nbsp;(2)</li>
+	<li><a href='http://imgur.com/blog/2011/12/'>December 2011</a>&nbsp;(1)</li>
+	<li><a href='http://imgur.com/blog/2011/10/'>October 2011</a>&nbsp;(3)</li>
+	<li><a href='../../2011/08/index.html'>August 2011</a>&nbsp;(4)</li>
+	<li><a href='../../2011/07/index.html'>July 2011</a>&nbsp;(2)</li>
+	<li><a href='../../2011/06/index.html'>June 2011</a>&nbsp;(6)</li>
+	<li><a href='../../2011/05/index.html'>May 2011</a>&nbsp;(5)</li>
+	<li><a href='../../2011/04/index.html'>April 2011</a>&nbsp;(6)</li>
+	<li><a href='../../2011/03/index.html'>March 2011</a>&nbsp;(4)</li>
+	<li><a href='../../2011/02/index.html'>February 2011</a>&nbsp;(6)</li>
+	<li><a href='../../2011/01/index.html'>January 2011</a>&nbsp;(4)</li>
+	<li><a href='../../2010/12/index.html'>December 2010</a>&nbsp;(3)</li>
+	<li><a href='../../2010/11/index.html'>November 2010</a>&nbsp;(3)</li>
+	<li><a href='../../2010/08/index.html'>August 2010</a>&nbsp;(1)</li>
+	<li><a href='../../2010/07/index.html'>July 2010</a>&nbsp;(1)</li>
+	<li><a href='../../2010/06/index.html'>June 2010</a>&nbsp;(3)</li>
+		</ul>
+</li><li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2>		<ul>
+	<li class="cat-item cat-item-12"><a href="http://imgur.com/blog/category/news/community/" title="View all posts filed under Community">Community</a> (13)
+</li>
+	<li class="cat-item cat-item-7"><a href="../contests/index.html" title="View all posts filed under Contests">Contests</a> (10)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://imgur.com/blog/category/images/" title="View all posts filed under Featured Images">Featured Images</a> (67)
+</li>
+	<li class="cat-item cat-item-1"><a href="../features/index.html" title="View all posts filed under Features">Features</a> (34)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://imgur.com/blog/category/news/" title="View all posts filed under News">News</a> (58)
+</li>
+	<li class="cat-item cat-item-9 current-cat"><a href="index.html" title="View all posts filed under Tech Tuesday">Tech Tuesday</a> (17)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://imgur.com/blog/category/updates/" title="View all posts filed under Updates">Updates</a> (31)
+</li>
+		</ul>
+</li><li id="text-3" class="widget widget_text"><h2 class="widgettitle">RSS Feed</h2>			<div class="textwidget"><table id="rss-table">
+<tr>
+<td>
+    <img src="../../../images/blog_rss.png" alt="">&nbsp;
+</td>
+<td>
+    <a href="http://feeds.feedburner.com/TheImgurBlog?format=xml">Subscribe</a></div>
+</td>
+</tr>
+</table></div>
+		</li>		</ul>
+	</div>
+</div>
+	
+	<div class="right" style="margin-top: 10px; display:none">
+		<div class="panel" style="padding: 15px;">
+			<div class="center" id="twitter-follow">
+				<a href="http://www.twitter.com/imgur">
+					<img src="http://twitter-badges.s3.amazonaws.com/follow_me-c.png" alt="Follow imgur on Twitter"/>
+				</a>
+			</div>
+			
+			<div id="twitter-widget">
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'search',
+				  search: 'imgur gallery',
+				  interval: 6000,
+				  title: '',
+				  subject: '',
+				  width: 220,
+				  height: 300,
+				  theme: {
+					shell: {
+					  background: 'transparent',
+					  color: '#ddddd1'
+					},
+					tweets: {
+					  background: '#181817',
+					  color: '#ddddd1',
+					  links: '#4E76C9'
+					}
+				  },
+				  features: {
+					scrollbar: true,
+					loop: false,
+					live: true,
+					hashtags: true,
+					timestamp: true,
+					avatars: false,
+					toptweets: true,
+					behavior: 'default'
+				  }
+				}).render().start();
+				</script>
+			</div>
+		</div>
+	</div>
+		
+
+		</div>
+
+		<div class="clear"></div>
+
+	</div>
+
+    <div id="footer">
+        <div id="copyright">© 2013 Imgur, Inc. All rights reserved.</div>
+        <a href="http://imgur.com/help" class="title" title="answers to your questions">help</a>
+        <a href="../../index.html" class="title" title="the simple imgur blog">blog</a>
+        <a href="../../../removalrequest.html" class="title" title="submit an image removal request">request deletion</a>
+        <a href="../../../tos.html" class="title" title="terms of service">terms</a>
+        <a href="http://store.imgur.com" class="green title" title="the official imgur store">store</a>
+        <a href="http://imgur.com/apps" class="title" title="uploading apps">apps</a>
+        <a href="http://api.imgur.com" class="title" title="the imgur API">api</a>
+        <a href="http://imgur.com/advertise" class="title" title="advertise on imgur">advertise</a>
+    </div>
+
+    <div id="voxel">
+        <a href="http://www.voxel.net">
+            <img src="../../../images/poweredByVoxel.png" alt="Powered by Voxel" title="Powered by Voxel" />
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-6671908-2']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        var _qevents = _qevents || [];
+        (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        _qevents.push({
+            qacct:"p-f8oruOqDFlMeI"
+        });
+    </script>
+
+    <noscript>
+        <div class="nodisplay">
+            <img src="http://pixel.quantserve.com/pixel/p-f8oruOqDFlMeI.gif" border="0" height="1" width="1" alt="Quantcast"/>
+        </div>
+    </noscript>
+</body>
+</html>
